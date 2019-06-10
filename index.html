@@ -15,12 +15,57 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <!-- Bring in stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <header>
+      <div class="container">
+        <div class="jumbotron">
+          Gem Game!
+        </div>
+      </div>
+    </header>
 
-    
+    <div class="container">
+      <div id="maincontent" class="row d-flex justify-content-around">
+        <div id="scoreboard" class="col-4">
+          <!-- <div class="row d-flex justify-content-around"> -->
+            <div class="col-12 fas fa-gem" id="evilgem"></div>
+          <!-- </div> -->
+          <div class="row"></div>
+          <!-- <hr /> -->
+          <div class="col-12" id="eviltotal"></div>
+          <hr />
+          <h3>Scoreboard</h3>
+          <hr />
+
+          <div class="row dflex justify-content-around">
+            <div class="col-5 winscolumn">
+              <div class="row fas fa-check-circle"></div>
+              <div class="row dflex justify-content-around" id="winsdiv"></div>
+            </div>
+            <div class="col-5 losscolumn">
+              <div class="row fas fa-skull-crossbones"></div>
+              <div class="row dflex justify-content-around" id="lossdiv"></div>
+            </div>
+          </div>
+        </div>
+        <div id="gameboard" class="col-6">
+          <div class="row d-flex justify-content-around" id="gemboard"></div>
+          <hr />
+          <h3>gameboard</h3>
+          <hr />
+          <div class="row d-flex justify-content-around">
+            <div id="userScore" class="col-11">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Bring in Bootstarp Java -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,6 +82,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bring in fontawesome for gem dingbat -->
+    <script src="https://kit.fontawesome.com/cc45af3f98.js"></script>
     <!-- bring in game javascript -->
     <script src="./assets/javascript/game.js"></script>
   </body>

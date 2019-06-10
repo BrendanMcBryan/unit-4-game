@@ -1,0 +1,82 @@
+* {
+  /* padding: 16px; */
+  /* border: red 3px solid; */
+  /* background-color: teal; */
+}
+body {
+  background-image: url("../images/topography.png");
+}
+
+#scoreboard,
+#gameboard {
+  padding: 32px auto;
+  padding-bottom: 32px;
+  border: 1px solid slategrey;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#gameboard {
+  padding-top: 32px;
+}
+.gem-btn,
+#userScore {
+  /* width: 25px;
+    height: 25px; */
+  /* background-color: blue; */
+  text-align: center;
+  padding: 9px;
+  padding-bottom: 25px;
+  font-size: 50px;
+  border-radius: 9px;
+}
+
+#evilgem,
+#eviltotal {
+  background-color: black;
+  color: White;
+  padding: 32px 0;
+  font-size: 150px;
+  text-align: center;
+  border-radius: 9px 9px 0 0;
+  border: none;
+}
+
+#eviltotal {
+  font-size: 32px;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  border-radius: 0 0 9px 9px;
+}
+.winscolumn,
+.losscolumn {
+  text-align: center;
+  align-content: center;
+  background-color: green;
+  font-size: 32px;
+  color: white;
+  border-radius: 9px;
+
+  /* padding: 5px; */
+}
+.losscolumn {
+  background-color: maroon;
+}
+h3 {
+  text-align: center;
+  color: darkslategray;
+}
+#winsdiv,
+#lossdiv {
+  text-align: center;
+  background-color: lightgreen;
+  border-radius: 0 0 9px 9px;
+}
+#lossdiv {
+  background-color: lightcoral;
+}
+#userScore {
+  padding: 16px;
+  background-color: lightblue;
+}

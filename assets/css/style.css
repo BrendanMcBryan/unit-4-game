@@ -9,7 +9,7 @@ body {
 
 #scoreboard,
 #gameboard {
-  padding: 32px auto;
+  padding: 32px;
   padding-bottom: 32px;
   border: 1px solid slategrey;
   background-color: whitesmoke;

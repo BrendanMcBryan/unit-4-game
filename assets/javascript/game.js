@@ -5,6 +5,7 @@ var userPoints = 0;
 var winsdiv = $("#winsdiv");
 var lossdiv = $("#lossdiv");
 var userScorediv = $("#userScore");
+var progressDiv = $("#progressdiv");
 
 function startRound() {
   winsdiv.text(gameWins);
@@ -37,6 +38,7 @@ function startRound() {
     gemvalue = parseInt(gemvalue);
     userPoints += gemvalue;
     userScorediv.text(userPoints);
+    updateprogress();
     console.log(userPoints);
     console.log(evilGemPoints);
     // console.log()
@@ -67,7 +69,12 @@ function getGemColor() {
     "OrangeRed",
     "DarkOrange",
     "Gold",
-    "Yellow"
+    "Yellow",
+    "Indigo",
+    "DarkMagenta",
+    "HotPink",
+    "MediumVioletRed",
+    "RoyalBlue"
   ];
 
   var rando = Math.floor(Math.random() * brightArr.length + 1);
@@ -77,9 +84,9 @@ function getGemColor() {
 }
 function getGemBG() {
   var blueArr = [
-    "Aqua",
+    "LightCyan",
     "AquaMarine",
-    "DarkTurquoise",
+    "PaleTurquoise",
     "SkyBlue",
     "PowderBlue"
   ];
@@ -89,4 +96,11 @@ function getGemBG() {
   return blueArr[rando];
 }
 
+function updateprogress() {
+  var progresspercent = Math.floor((userPoints / evilGemPoints) * 100);
+  var progresspercenttext = ("width: " + progresspercent + "%");
+  console.log(progresspercenttext);
+  progressDiv.attr("style", progresspercenttext);
+  progressDiv.attr("aria-valuenow", progresspercent);
+}
 startRound();

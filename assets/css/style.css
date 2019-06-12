@@ -8,17 +8,33 @@ body {
 }
 
 #scoreboard,
-#gameboard {
-  padding: 32px;
+#gameboard,
+.topwindow {
+  padding: 32px auto;
   padding-bottom: 32px;
   border: 1px solid slategrey;
   background-color: whitesmoke;
   border-radius: 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.topwindow {
+  margin: 64px 32px;
+  text-align: center;
+  padding: 32px;
+  background-image: linear-gradient(to top right, lightblue,PaleTurquoise);
+  border: 0;
+}
+#topbanner {
+  color: white;
+  text-transform: uppercase;
+}
 
 #gameboard {
   padding-top: 32px;
+}
+#scoreboard {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .gem-btn,
 #userScore {
@@ -30,6 +46,7 @@ body {
   padding-bottom: 25px;
   font-size: 50px;
   border-radius: 9px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #evilgem,
@@ -57,6 +74,8 @@ body {
   font-size: 32px;
   color: white;
   border-radius: 9px;
+  margin-left: 32px;
+  margin-right: 32px;
 
   /* padding: 5px; */
 }
@@ -79,4 +98,8 @@ h3 {
 #userScore {
   padding: 16px;
   background-color: lightblue;
+}
+
+.progress{
+  margin: 64px 8px 0px 8px;
 }

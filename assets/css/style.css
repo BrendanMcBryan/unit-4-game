@@ -9,6 +9,7 @@ body {
 
 #scoreboard,
 #gameboard,
+.secondwindow,
 .topwindow {
   padding: 32px auto;
   padding-bottom: 32px;
@@ -18,16 +19,55 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .topwindow {
-  margin: 64px 32px;
+  margin: 32px;
   text-align: center;
   padding: 32px;
-  background-image: linear-gradient(to top right, lightblue,PaleTurquoise);
+  background-image: linear-gradient(to top right, lightblue, PaleTurquoise);
+  border: 0;
+}
+.secondwindow {
+  margin: 16px 32px;
+  margin-bottom: 32px;
+  text-align: center;
+  padding: 16px;
+  background-image: linear-gradient(to bottom left, lightblue, PaleTurquoise);
   border: 0;
 }
 #topbanner {
   color: white;
   text-transform: uppercase;
 }
+
+.metabutton {
+  padding: 6px;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#metaPlayDiv {
+  background-color: teal;
+}
+
+#metaresetDiv {
+  background-color: mediumaquamarine;
+}
+#metaResultDiv {
+  background-color: seagreen;
+  display: none;
+}
+
+/* 
+#metaButtonRow {
+  padding: 32px auto;
+  padding-bottom: 32px;
+  border: 1px solid slategrey;
+  background-color: whitesmoke;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} */
 
 #gameboard {
   padding-top: 32px;
@@ -37,7 +77,8 @@ body {
   padding-right: 0px;
 }
 .gem-btn,
-#userScore {
+#userScore,
+.gamebutton {
   /* width: 25px;
     height: 25px; */
   /* background-color: blue; */
@@ -100,6 +141,6 @@ h3 {
   background-color: lightblue;
 }
 
-.progress{
+.progress {
   margin: 64px 8px 0px 8px;
 }
